@@ -1,0 +1,18 @@
+# PlatformIO
+.pio/
+.vscode/
+*.o
+*.a
+*.lib
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
