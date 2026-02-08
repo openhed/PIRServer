@@ -17,6 +17,7 @@
 #include <ArduinoJson.h>
 #include <ArduinoOTA.h>
 #include <SimplePgSQL.h>
+#include <queue>
 
 #include <SerialCom.h>
 #include <Types.h>
@@ -54,13 +55,6 @@ WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", 0, 60000);
 
 std::queue<String> datetimeQueue;
-const int MAX_QUEUE_SIZE = 50;
-
-
-
-std::queue<String> datetimeQueue;
-
-const int MAX_QUEUE_SIZE = 50;std::queue<String> datetimeQueue;
 const int MAX_QUEUE_SIZE = 50;
 
 String getCurrentUTCTime() {
